@@ -1,11 +1,18 @@
 table {
   border: 1px solid black;
-  margin-top: 20px;
 }
 
 table td {
   border: 1px solid black;
   padding: 5px;
+}
+
+img {
+  padding: 20px 0;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 * {
@@ -18,5 +25,9 @@ table td {
 body {
   margin: 0 auto;
   width: 80%;
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 

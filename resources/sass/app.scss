@@ -1,5 +1,6 @@
 //
 @import '_index';
+@import '_show';
 
 * {
     margin: 0;
@@ -11,4 +12,8 @@
 body {
     margin: 0 auto;
     width: 80%;
+}
+
+h1 {
+    margin-bottom: 20px;
 }

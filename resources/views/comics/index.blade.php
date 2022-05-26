@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
-    <title>Comics</title>
-</head>
-
-<body>
+@section('index')
     <main>
         {{-- @dump($comics) --}}
         <h1>COMICS</h1>
@@ -39,7 +30,6 @@
 
             </tbody>
         </table>
+        <a href="{{ route('comics.create') }}">ADD ELEMENT</a>
     </main>
-</body>
-
-</html>
+@endsection
