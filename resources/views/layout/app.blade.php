@@ -16,6 +16,8 @@
 
     @yield('create')
 
+    @yield('edit')
+
 </body>
 
 </html>

@@ -12,6 +12,7 @@
                     <th>Type</th>
                     <th>Price</th>
                     <th>Detail</th>
+                    <th>Change</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +22,7 @@
                         <td>{{ $comic->type }}</td>
                         <td>{{ $comic->price }}$</td>
                         <td><a href="{{ route('comics.show', $comic->id) }}"> + </a></td>
+                        <td><a href="{{ route('comics.edit', $comic->id) }}"> + </a></td>
                     </tr>
                 @empty
                     <tr>
