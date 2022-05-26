@@ -1,18 +1,14 @@
 //
+@import '_index';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     margin: 0 auto;
     width: 80%;
-    text-align: center;
-}
-
-div {
-    border: 1px solid black;
-    margin: 10px;
 }

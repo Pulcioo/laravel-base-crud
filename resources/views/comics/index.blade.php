@@ -12,21 +12,31 @@
 <body>
     <main>
         {{-- @dump($comics) --}}
-        <h1>Fumetti</h1>
-        @forelse ($comics as $comic)
-            <div>
-                <h2>{{ $comic->title }}</h2>
-                <img src="{{ $comic->thumb }}" alt="">
-                <p>{{ $comic->description }}</p>
-                <p>{{ $comic->series }}</p>
-                <p>{{ $comic->type }}</p>
-                <p>{{ $comic->sales_date }}</p>
-                <p>{{ $comic->price }}$</p>
-            </div>
-        @empty
-            <p>Non ci sono fumetti!</p>
-        @endforelse
+        <h1>FUMETTI</h1>
 
+        <table class="list">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @forelse ($comics as $comic)
+                    <tr>
+                        <td>{{ $comic->title }}</td>
+                        <td>{{ $comic->type }}</td>
+                        <td>{{ $comic->price }}$</td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td>Non ci sono fumetti!</td>
+                    </tr>
+                @endforelse
+
+            </tbody>
+        </table>
     </main>
 </body>
 
