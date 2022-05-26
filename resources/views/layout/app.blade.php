@@ -14,6 +14,8 @@
 
     @yield('show')
 
+    @yield('create')
+
 </body>
 
 </html>
