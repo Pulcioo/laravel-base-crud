@@ -15,6 +15,15 @@ p {
   margin-bottom: 10px;
 }
 
+#form-delete {
+  padding: 0;
+  border: 0;
+}
+
+#form-delete .delete {
+  margin-bottom: 10px;
+}
+
 form {
   border: 1px solid black;
   padding: 20px;
