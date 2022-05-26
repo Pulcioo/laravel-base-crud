@@ -12,7 +12,7 @@
 <body>
     <main>
         {{-- @dump($comics) --}}
-        <h1>FUMETTI</h1>
+        <h1>COMICS</h1>
 
         <table class="list">
             <thead>
@@ -20,6 +20,7 @@
                     <th>Title</th>
                     <th>Type</th>
                     <th>Price</th>
+                    <th>Detail</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,6 +29,7 @@
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->type }}</td>
                         <td>{{ $comic->price }}$</td>
+                        <td><a href="{{ route('comics.show', $comic->id) }}"> + </a></td>
                     </tr>
                 @empty
                     <tr>
